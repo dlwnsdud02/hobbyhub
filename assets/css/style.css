@@ -39,7 +39,7 @@ nav {
 }
 
 /* 네비게이션 버튼 스타일 */
-.navbutton {
+nav a {
     background-color: #B3CBC2;
     color: white;
     text-decoration: none;
