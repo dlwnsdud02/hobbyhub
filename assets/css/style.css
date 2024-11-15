@@ -28,6 +28,13 @@ header img {
     margin-right: 20px; /* 로고와 네비게이션 간격 */
 }
 
+header div {
+    font-size: 1.5em; /* 글자 크기 */
+    font-weight: bold; /* 굵게 표시 */
+    color: white; /* 글자 색상 */
+    margin-right: auto; /* 네비게이션과의 간격 확보 */
+}
+
 /* 네비게이션 스타일 */
 nav {
     display: flex;
