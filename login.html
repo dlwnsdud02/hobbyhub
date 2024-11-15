@@ -9,27 +9,29 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="assets\img\HobbyHub_Logo.png" alt="HobbyHub_Logo">
-        </a>
+        <img src="assets\img\HobbyHub_Logo.png" alt="HobbyHub Logo">
         <div class="site-name">HobbyHub</div>
     </header>
-    <main>
-        <div class="login-container">
-            <h1>Login to HobbyHub</h1>
+    <main class="puzzle-login">
+        <h1>Welcome to HobbyHub</h1>
+        <p class="tagline">Unlock your passion and connect with others!</p>
+        <div class="puzzle-container">
             <form action="#" method="post">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                
-                <button type="submit">Login</button>
+                <div class="puzzle-piece piece1">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="puzzle-piece piece2">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="puzzle-piece piece3">
+                    <button type="submit">Login</button>
+                </div>
             </form>
+            <p class="signup-link">New here? <a href="signup.html">Sign up now!</a></p>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2023 HobbyHub. All rights reserved.</p>
-    </footer>
+
 </body>
 </html>
