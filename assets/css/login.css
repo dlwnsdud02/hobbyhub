@@ -1,55 +1,110 @@
-.login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.puzzle-login h1 {
+    font-size: 2em;
+    color: #87C5AD;
+    margin-bottom: 10px;
+}
+
+.puzzle-login .tagline {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.puzzle-container {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "piece1 piece2"
+        "piece3 piece3";
+    grid-gap: 10px;
     max-width: 400px;
     width: 100%;
+    margin: 0 auto;
 }
 
-.login-container h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.login-container form {
+/* 퍼즐 조각 스타일 */
+.puzzle-piece {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.login-container label {
-    font-weight: bold;
+.puzzle-piece:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 개별 조각 배치 */
+.piece1 {
+    grid-area: piece1;
+}
+
+.piece2 {
+    grid-area: piece2;
+}
+
+.piece3 {
+    grid-area: piece3;
+}
+
+/* 입력 필드 */
+.puzzle-piece label {
     margin-bottom: 5px;
+    font-weight: bold;
     color: #555;
 }
 
-.login-container input {
-    margin-bottom: 15px;
+.puzzle-piece input {
+    width: 100%;
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.login-container input:focus {
+.puzzle-piece input:focus {
     outline: none;
-    border-color: #87c5ad;
+    border-color: #87C5AD;
     box-shadow: 0 0 5px rgba(135, 197, 173, 0.5);
 }
 
-.login-container button {
-    background-color: #B3CBC2;
-    color: white;
-    font-size: 1.1em;
+/* 로그인 버튼 */
+.puzzle-piece button {
+    width: 100%;
     padding: 10px;
+    background-color: #87C5AD;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-container button:hover {
-    background-color: #87c5ad;
+.puzzle-piece button:hover {
+    background-color: #6BAF92;
+}
+
+/* 회원가입 링크 */
+.signup-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: #87C5AD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
 }
