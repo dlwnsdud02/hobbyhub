@@ -1,8 +1,14 @@
 /* 기본 스타일 */
 body {
     margin: 0;
-    background-color: #FAF9F6;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #F6F9FC, #E3E8EE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
 }
 
 /* 헤더 스타일 */
