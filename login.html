@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HobbyHub - Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
     <header>
-        <h1>Login</h1>
+        <a href="index.html">
+            <img src="assets\img\HobbyHub_Logo.png" alt="HobbyHub_Logo">
+        </a>
+        <div class="site-name">HobbyHub</div>
     </header>
     <main>
-        <form action="#" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
+        <div class="login-container">
+            <h1>Login to HobbyHub</h1>
+            <form action="#" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 HobbyHub. All rights reserved.</p>
